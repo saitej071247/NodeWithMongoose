@@ -1,0 +1,1 @@
+'use strict';const dbstore= require('./onecdkDb/hashTagDbStore');module.exports = {    getAlltags: dbstore.getHashtagsList};

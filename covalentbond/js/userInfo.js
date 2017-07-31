@@ -1,0 +1,1 @@
+'use strict';const userFeedDb = require('./onecdkDb/onecdk_user_schema');module.exports = {    getusersList: function (req, res) {        return userFeedDb.find({}, function (err, resp) {            if (err) {                res.send(err);            } else {                res.send(resp);            }        })    }}
